@@ -33,29 +33,7 @@ class BTNode:
 class BTree:
     def __init__(self):
         self.root=None
-def build_tree(tree,values):
-        if tree.root != None:
-            print("The Tree is not Empty")
-        else:
-            if len(values)== 0:
-                print("The List is empty")
-            else:
-                tree.root =BTNode(values[0])
-                for value in values [1:]:
-                    current_node = tree.root
-                    while current_node != None:
-                        if value < current_node.val:
-                            if current_node.left == None:
-                                current_node.left = BTNode(value)
-                                current_node=None
-                            else:
-                                current_node = current_node.left
-                        else:
-                            if current_node.right== None:
-                                current_node.right = BTNode(value)
-                                current_node=None
-                            else:
-                                current_node=current_node.right    
+
                                 
                             
                             
